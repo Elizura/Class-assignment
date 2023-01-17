@@ -1,0 +1,239 @@
+@font-face {
+  font-family: NewYork;
+  src: url(./fonts/FontsFree-Net-NewYorkSmallMedium.ttf);
+  font-family: magic;
+  src: url(./fonts/Magical-Signature-Personal-Use-Only.ttf);
+  font-family: brat;
+  src: url("../src/fonts/There-Brat.ttf");
+}
+body {
+  background-image: url("ryan-james-christopher-6JujHVZjrKM-unsplash.jpg");
+}
+p {
+  color: white;
+}
+h3 {
+  color: wheat;
+}
+li {
+  color: white;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: black;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-branding {
+  font-size: 2rem;
+}
+.nav--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-link {
+  transition: 0.3s ease-out;
+}
+.nav-link:hover {
+  color: dodgerblue;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+body {
+  /* background-image: url("lasse-moller-OjiViDh0-1w-unsplash.jpg"); */
+}
+.topclass {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.hot {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 60%;
+  gap: 3rem;
+}
+.hot--each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hot--each button {
+  font-size: 70%;
+}
+.hot__img img {
+  width: 100%;
+  height: 100%;
+}
+.hot__img {
+  width: 90%;
+  height: 90%;
+}
+.month {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 5em; */
+  gap: 10em;
+}
+.month--each {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4em;
+  margin: 0 auto;
+}
+.month--each:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.month__img {
+  transition: box-shadow 0.3s;
+  width: 40%;
+  box-shadow: 10px;
+  border-radius: 9%;
+}
+.month__img:hover {
+  box-shadow: 0 0 11px red;
+}
+.month--each img {
+  border-radius: 9%;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.month__p {
+  width: 30%;
+  color: white;
+}
+.month__p:hover {
+  box-shadow: 0 0 11px blueviolet;
+}
+.topclass--side {
+  border: #ffb800 3px solid;
+  height: 8rem;
+  width: 10rem;
+}
+.topclass li {
+  border: solid black 1px;
+}
+.topclass li:nth-child(even) {
+  background-color: #d2d1d1;
+}
+.month__p {
+  font-family: brat;
+  justify-content: left;
+}
+footer {
+  height: 10rem;
+}
+.footer {
+  background-color: #ffb800;
+  opacity: 0.85;
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 5% auto;
+  width: 100%;
+  height: 100%;
+}
+.footer li {
+  color: white;
+}
+.footer--list {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  justify-items: left;
+  width: 54rem;
+  margin-left: 10%;
+}
+.footer--list a {
+  font-size: 1.7em;
+}
+.nowstreaming h1 {
+  color: #ffb800;
+}
+.footer:link,
+.footer:visited {
+  font-size: 2rem;
+  /* color: #ffb800; */
+  transition: all 0.3s;
+}
+.footer--media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+@media (max-width: 700px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav--menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav--item {
+    margin: 16px 0;
+  }
+  .nav--menu.active {
+    left: 0;
+    z-index: 2;
+  }
+}
