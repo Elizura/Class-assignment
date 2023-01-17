@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "sf";
+  src: url(../../fonts/FontsFree-Net-SFProDisplay-Heavy-1.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+  background-image: url("./img-1.jpg");
+}
+
+header {
+  background-color: black;
+}
+li {
+  list-style: none;
+}
+header a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1224px;
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-branding {
+  font-size: 2rem;
+}
+.nav--menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-link {
+  transition: 0.3s ease-out;
+}
+.nav-link:hover {
+  color: dodgerblue;
+}
+.hamburger {
+  z-index: 10;
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+.title {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title h1 {
+  font-weight: 700;
+  size: 54px;
+  line-height: 54px;
+  text-align: Center;
+}
+.title p {
+  width: 50%;
+  font-family: "sf mono";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: Center;
+  /* margin-left: 40%; */
+}
+.title img {
+  width: 100%;
+  height: auto;
+}
+hr {
+  margin: 3% 17%;
+  border: solid black 1.5px;
+}
+.paragraph {
+  width: 60%;
+  margin: 0 auto;
+  font: NewYork;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+}
+.readmore {
+  align-self: center;
+  margin: 3% auto;
+  width: 80%;
+  /* height: 500px; */
+  background-color: #262626;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.readmore--component {
+  width: 50%;
+  max-height: 40rem;
+  /* height: 50%; */
+  /* background-color: red; */
+}
+.readmore--component img {
+  height: 100%;
+  width: 100%;
+}
+.relatedMovies {
+  /* background-color: #988f8f; */
+  display: flex;
+  gap: 8%;
+  justify-content: space-between;
+  margin: 5% auto;
+  width: 80%;
+}
+.relatedMovies div {
+  height: 70%;
+}
+.relatedMovies img {
+  width: 100%;
+  height: 100%;
+}
+.relatedMovies div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.related1--img {
+  width: 100%;
+  height: 100%;
+}
+.related2--img {
+  width: 100%;
+  height: 100%;
+}
+.related3--img {
+  width: 100%;
+  height: 100%;
+}
+.relatedMovies p {
+  font: sf;
+  font-weight: 500;
+  size: 22px;
+  line-height: 120%;
+  text-align: Center;
+}
+.related1--p p {
+  width: 100%;
+  height: 100%;
+}
+.related1--p {
+  width: 100%;
+  height: 100%;
+}
+/* -------------------------------- */
+@media (max-width: 800px) {
+  .relatedMovies {
+    display: flex;
+    flex-direction: column;
+    /* gap: 8%; */
+    justify-content: space-between;
+    margin: 5% auto;
+    width: 80%;
+  }
+  .relatedMovies div {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .hamburger {
+    z-index: 10;
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav--menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav--item {
+    margin: 16px 0;
+  }
+  .nav--menu.active {
+    z-index: 10;
+    left: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.buttons .download {
+  background-color: #73e158;
+}
+.buttons .addToFavorite {
+  background-color: #988f8f;
+}
+.buttons button {
+  border-radius: 10%;
+}
+.buttons button p {
+  margin-top: 20%;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: 3% auto;
+  margin-top: 5%;
+}
+.buttons {
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
