@@ -6,81 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="This is the about us page" />
     <title>About us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./aboutUs.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <div>
-          <a href="./index.html">Home</a>
-          <a href="./signup.html">Sign Up</a>
-          <a href="./Blog.html">Blog</a>
-          <a href="./Movies.html">Movies</a>
-          <a href="./AboutUs.html">About Us</a>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="nav-branding">Logo</a>
+          <ul class="nav--menu">
+            <li class="nav--item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav--item">
+              <a href="./signin.html" class="nav-link">Sign up</a>
+            </li>
+            <li class="nav--item">
+              <a href="./Blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav--item">
+              <a href="./Movies.html" class="nav-link">Movies</a>
+            </li>
+            <li class="nav--item">
+              <a href="./AboutUs.html" class="nav-link">About</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
     </header>
-    <h1>Who are we?</h1>
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-      asperiores quam inventore illo harum aperiam facere porro id quis magni
-      fugit ex accusamus maiores, saepe eum rem dolore ab adipisci! Lorem ipsum
-      dolor, sit amet consectetur adipisicing elit. Consequatur tenetur
-      similique eveniet ipsam quidem in odio consectetur, minima temporibus
-      corporis vel nihil praesentium saepe et assumenda minus magnam est
-      molestiae?
-    </p>
-    <div>
-      <img src="" alt="Photo of the author of this website" />
+    <div class="hero">
+      <h1>Who are we?</h1>
       <p>
-        Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores rem quas
-        autem praesentium consectetur molestias. Commodi, esse! Corporis id vero
-        ab! Aliquam animi ipsam doloremque illum dignissimos recusandae?
-      </p>
-      <img src="" alt="Photo of the collaborator for this website" />
-      <p>
-        Lorem ipsum dolor,et consectetur adipisicing elit. Ipsam est dolores rem
-        quas autem praesentium consectetur molestias. Commodi, esse! Corporis id
-        vero ab! Aliquam animi ipsam doloremque illum dignissimos recusandae?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
+        asperiores quam inventore illo harum aperiam facere porro id quis magni
+        fugit ex accusamus maiores, saepe eum rem dolore ab adipisci! Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Consequatur tenetur
+        similique eveniet ipsam quidem in odio consectetur, minima temporibus
+        corporis vel nihil praesentium saepe et assumenda minus magnam est
+        molestiae?
       </p>
     </div>
 
-    <div>
-      <div>
-        <img src="" alt="Photo of one of a client of the website" />
+    <div class="contributors">
+      <div class="contributor--first">
+        <img
+          src="./joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+          alt="Photo of the author of this website"
+        />
+
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          dignissimos recusandae tempore, <br />
-          ducimus debitis, placeat animi, cum corrupti sequi saepe amet
-          similique officae minus aliquid officia cum harum vel tempore.
+          Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores rem
+          quas autem praesentium consectetur molestias. Commodi, esse! Corporis
+          id vero ab! Aliquam animi ipsam doloremque illum dignissimos
+          recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Deserunt, officia?
         </p>
+        <audio>Play</audio>
+      </div>
+      <div class="contributor--second">
+        <img
+          src="./rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg"
+          alt="Photo of the collaborator for this website"
+        />
+        <p>
+          Lorem ipsum dolor,et consectetur adipisicing elit. Ipsam est dolores
+          Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores rem
+          quas autem praesentium consectetur molestias. Commodi, esse! Corporis
+          id vero ab! Aliquam animi ipsam doloremque illum dignissimos
+          recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Deserunt, officia?
+        </p>
+      </div>
+    </div>
+
+    <div class="clients">
+      <div class="client--one">
+        <img
+          src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+          alt="Photo of one of a client of the website"
+          height="120px"
+          width="120px"
+        />
+        <div class="test">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            dignissimos recusandae tempore, ducimus debitis, placeat animi, cum
+            corrupti sequi saepe amet similique officae minus aliquid officia
+            cum harum vel tempore.
+          </p>
+        </div>
         <audio
           src="./audio/prj_108373_b4afed2f83f686a07aa94e3c467b3936_1672173592.mp3"
         >
           Play
         </audio>
       </div>
-      <div>
-        <img src="" alt="Photo of one of a client of the website" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          dignissimos recusandae tempore, <br />
-          ducimus debitis, placeat animi, cum corrupti sequi saepe amet
-          similique officae minus aliquid officia cum harum vel tempore.
-        </p>
+      <div class="client--two">
+        <img
+          height="120px"
+          width="120px"
+          src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+          alt="Photo of one of a client of the website"
+        />
+        <div class="test">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            dignissimos recusandae tempore, ducimus debitis, placeat animi, cum
+            corrupti sequi saepe amet similique officae minus aliquid officia
+            cum harum vel tempore.
+          </p>
+        </div>
         <audio
           src="./audio/prj_108373_b4afed2f83f686a07aa94e3c467b3936_1672173592.mp3"
         >
           Play
         </audio>
       </div>
-      <div>
-        <img src="" alt="Photo of one of a client of the website" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-          dignissimos recusandae tempore, <br />
-          ducimus debitis, placeat animi, cum corrupti sequi saepe amet
-          similique officae minus aliquid officia cum harum vel tempore.
-        </p>
+      <div class="client--three">
+        <img
+          height="120px"
+          width="120px"
+          src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+          alt="Photo of one of a client of the website"
+        />
+        <div class="test">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            dignissimos recusandae tempore, ducimus debitis, placeat animi, cum
+            corrupti sequi saepe amet similique officae minus aliquid officia
+            cum harum vel tempore.
+          </p>
+        </div>
         <audio
           src="./audio/prj_108373_b4afed2f83f686a07aa94e3c467b3936_1672173592.mp3"
         >
@@ -93,15 +167,19 @@
     <br />
     <br />
     <footer>
-      <div>
-        <ul>
+      <div class="footer">
+        <ul class="footer--list">
           <li><a href="./mislaneous.html"> FAQ</a></li>
           <li><a href="./mislaneous.html">Help center</a></li>
           <li><a href="./mislaneous.html">Privacy</a></li>
+          <li><a href="./mislaneous.html">Account</a></li>
         </ul>
-        <h2>Follow Us</h2>
-        <a href="./ContactUs.html">Contact Us</a>
+        <div class="footer--media">
+          <h2>Follow Us</h2>
+          <a href="./ContactUs.html">Contact Us</a>
+        </div>
       </div>
     </footer>
+    <script src="./aboutUs.js"></script>
   </body>
 </html>

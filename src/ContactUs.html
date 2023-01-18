@@ -4,68 +4,128 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Description" content="This is the contact us page" />
-    <title>Contact Us</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <div>
-          <a href="./index.html">Home</a>
-          <a href="./signup.html">Sign Up</a>
-          <a href="./Blog.html">Blog</a>
-          <a href="./Movies.html">Movies</a>
-          <a href="./AboutUs.html">About Us</a>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="#" class="nav-branding">Logo</a>
+        <ul class="nav--menu">
+          <li class="nav--item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav--item">
+            <a href="./signin.html" class="nav-link">Sign up</a>
+          </li>
+          <li class="nav--item">
+            <a href="./Blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav--item">
+            <a href="./Movies.html" class="nav-link">Movies</a>
+          </li>
+          <li class="nav--item">
+            <a href="./AboutUs.html" class="nav-link">About</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
-    </header>
-    <div>
-      <h1>Contact Us</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-        voluptatum saepe pariatur laudantium esse maxime ipsa atque possimus
-        eligendi porro quisquam assumenda odit neque, obcaecati culpa? Iusto
-        ipsam voluptates numquam! Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quasi laborum sapiente dolores ad asperiores iste
-        corrupti autem ratione similique hic nihil sunt illum, non facere harum,
-        architecto nostrum blanditiis esse!
-      </p>
-      <form action="">
-        <br />
-        <label for="firstName">First Name:</label>
-        <input id="firstName" type="text" name="firstName" /><br />
-        <br />
-        <label for="lastname">Last Name:</label>
-        <input id="lastname" type="text" name="lastname" /><br />
-        <br />
-        <label for="email">Email Address</label>
-        <input id="email" type="text" name="email" /><br />
-        <br />
-        <label for="Comments">Comments</label>
-        <textarea
-          name=""
-          id="Comments"
-          cols="30"
-          rows="10"
-          placeholder="write us a note"
-        ></textarea>
-        <button>Submit</button>
-      </form>
+    </div>
+  </header>
+  <body>
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="./img-1.jpg" style="width: 100%" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit eum
+          consequatur laudantium accusamus animi placeat facere nesciunt,
+          numquam labore libero necessitatibus asperiores doloribus eos
+          provident voluptatum fugit autem. Eius, odit!
+        </p>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img-6.jpg" style="width: 100%" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+          in ipsam ab. Et, odit. Esse quas neque non nisi ad assumenda earum
+          animi, odit nam incidunt recusandae, autem illum. Eveniet!
+        </p>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="./img-5.jpg" style="width: 100%" />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+          in ipsam ab. Et, odit. Esse quas neque non nisi ad assumenda earum
+          animi, odit nam incidunt recusandae, autem illum. Eveniet!
+        </p>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br />
-    <br />
-    <br />
-    <br />
-    <footer>
-      <div>
-        <ul>
-          <li><a href="./mislaneous.html"> FAQ</a></li>
-          <li><a href="./mislaneous.html">Help center</a></li>
-          <li><a href="./mislaneous.html">Privacy</a></li>
-        </ul>
-        <h2>Follow Us</h2>
-        <a href="./ContactUs.html">Contact Us</a>
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="buttons">
+      <button class="download">
+        <p>⬇️Download</p>
+      </button>
+      <button class="addToFavorite"><p>➕Add to favorite</p></button>
+    </div>
+
+    <div class="relatedMovies">
+      <div class="related--1">
+        <div class="related1--img">
+          <img src="./img-1.jpg" alt="" />
+        </div>
+        <div class="related1--p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            maiores, odit blanditiis placeat consequuntur voluptatem libero
+            doloribus, autem esse quas quia nemo laboriosam repellendus
+            necessitatibus nisi sunt reprehenderit amet officiis.
+          </p>
+        </div>
       </div>
-    </footer>
+      <div class="related--2">
+        <div class="related2--img">
+          <img src="./img-2.jpg" alt="" />
+        </div>
+        <div class="related2--p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            maiores, odit blanditiis placeat consequuntur voluptatem libero
+            doloribus, autem esse quas quia nemo laboriosam repellendus
+            necessitatibus nisi sunt reprehenderit amet officiis.
+          </p>
+        </div>
+      </div>
+      <div class="related--3">
+        <div class="related3--img">
+          <img src="./img-3.jpg" alt="" />
+        </div>
+        <div class="related3--p">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            maiores, odit blanditiis placeat consequuntur voluptatem libero
+            doloribus, autem esse quas quia nemo laboriosam repellendus
+            necessitatibus nisi sunt reprehenderit amet officiis.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>

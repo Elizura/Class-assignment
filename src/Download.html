@@ -6,22 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="This is the Download page" />
     <title>Document</title>
+    <link rel="stylesheet" href="./download.css" />
   </head>
   <body>
-    <img src="" alt="" />
-    <h1>Movie Description</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat aliquam
-      ad ea soluta fugiat aperiam inventore sint laboriosam corporis omnis enim
-      voluptatem, quod accusamus animi, quis nesciunt odio adipisci commodi!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-      molestias commodi totam est esse laboriosam dicta impedit excepturi, dolor
-      quis rerum quaerat tempora nostrum. Vero temporibus dolores dolor totam
-      perferendis!
-    </p>
+    <header>
+      <div class="nav--container">
+        <nav class="navbar">
+          <a href="#" class="nav-branding">Logo</a>
+          <ul class="nav--menu">
+            <li class="nav--item">
+              <a href="./index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav--item">
+              <a href="./signup.html" class="nav-link">Sign up</a>
+            </li>
+            <li class="nav--item">
+              <a href="./Blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav--item">
+              <a href="./Movies.html" class="nav-link">Movies</a>
+            </li>
+            <li class="nav--item">
+              <a href="./AboutUs.html" class="nav-link">About</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="topic">
+      <h1>Movie Description</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+        aliquam ad ea soluta fugiat aperiam inventore sint laboriosam corporis
+        omnis enim voluptatem, quod accusamus animi, quis nesciunt odio adipisci
+        commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Reiciendis molestias commodi totam est esse laboriosam dicta impedit
+        excepturi, dolor quis rerum quaerat tempora nostrum. Vero temporibus
+        dolores dolor totam perferendis!
+      </p>
 
-    <button>Download</button>
-    <button>Add to Favorites</button>
+      <div class="buttons">
+        <button class="button" style="vertical-align: middle">
+          <span>⬇️DOWNLOAD</span>
+        </button>
+        <button class="button" style="vertical-align: middle">
+          <span>➕ADD TO FAVORITE</span>
+        </button>
+      </div>
+    </div>
     <h2>Related Movies</h2>
     <div>
       <video controls width="300" height="200px">
@@ -60,14 +97,17 @@
     <br />
     <br />
     <footer>
-      <div>
-        <ul>
+      <div class="footer">
+        <ul class="footer--list">
           <li><a href="./mislaneous.html"> FAQ</a></li>
           <li><a href="./mislaneous.html">Help center</a></li>
           <li><a href="./mislaneous.html">Privacy</a></li>
+          <li><a href="./mislaneous.html">Account</a></li>
         </ul>
-        <h2>Follow Us</h2>
-        <a href="./ContactUs.html">Contact Us</a>
+        <div class="footer--media">
+          <h2>Follow Us</h2>
+          <a href="./ContactUs.html">Contact Us</a>
+        </div>
       </div>
     </footer>
   </body>
