@@ -20,166 +20,195 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./aboutUs.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="nav-branding">Logo</a>
-          <ul class="nav--menu">
-            <li class="nav--item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav--item">
-              <a href="./signin.html" class="nav-link">Sign up</a>
-            </li>
-            <li class="nav--item">
-              <a href="./Blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav--item">
-              <a href="./Movies.html" class="nav-link">Movies</a>
-            </li>
-            <li class="nav--item">
-              <a href="./AboutUs.html" class="nav-link">About</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>LOGO</h2></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active bg-light" href="./index.html">Home</a>
+              <a class="nav-link bg-light" href="./signin.html">Sign Up</a>
+              <a class="nav-link bg-light" href="./Blog.html">Blog</a>
+              <a class="nav-link bg-light" href="./Movies.html">Movies</a>
+              <a class="nav-link bg-light" href="./AboutUs.html">About</a>
+            </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
     <div class="hero">
-      <h1>Who are we?</h1>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi
-        asperiores quam inventore illo harum aperiam facere porro id quis magni
-        fugit ex accusamus maiores, saepe eum rem dolore ab adipisci! Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Consequatur tenetur
-        similique eveniet ipsam quidem in odio consectetur, minima temporibus
-        corporis vel nihil praesentium saepe et assumenda minus magnam est
-        molestiae?
-      </p>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="container text-center">
+              <div class="row border justify-content-center m-3">
+                <div class="col-8 text-center">
+                  <h1>Who are we?</h1>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Commodi asperiores quam inventore illo harum aperiam facere
+                    porro id quis magni fugit ex accusamus maiores, saepe eum
+                    rem dolore ab adipisci! Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Consequatur tenetur similique
+                    eveniet ipsam quidem in odio consectetur, minima temporibus
+                    corporis vel nihil praesentium saepe et assumenda minus
+                    magnam est molestiae?
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="container border border-success mb-5">
+              <div class="row border align-items-center">
+                <div class="col bg-primary">
+                  <img
+                    class="img-thumbnail rounded"
+                    src="./joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
+                    alt="Photo of the author of this website"
+                    height="250em"
+                    width="250em"
+                  />
+                </div>
+                <div class="col">
+                  <p>
+                    Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est
+                    dolores rem quas autem praesentium consectetur molestias.
+                    Commodi, esse! Corporis id vero ab! Aliquam animi ipsam
+                    doloremque illum dignissimos recusandae? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Deserunt, officia?
+                  </p>
+                </div>
+              </div>
+              <div class="row border align-items-center">
+                <div class="col">
+                  <p>
+                    Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est
+                    dolores rem quas autem praesentium consectetur molestias.
+                    Commodi, esse! Corporis id vero ab! Aliquam animi ipsam
+                    doloremque illum dignissimos recusandae? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Deserunt, officia?
+                  </p>
+                </div>
+                <div class="col bg-primary">
+                  <img
+                    class="img-thumbnail rounded"
+                    src="./rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg"
+                    alt="Photo of the author of this website"
+                    height="250em"
+                    width="250em"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="container overflow-hidden text-center">
+              <div class="row mb-5">
+                <div class="col">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card" style="width: 18rem">
+                    <img
+                      src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="contributors">
-      <div class="contributor--first">
-        <img
-          src="./joseph-gonzalez-iFgRcqHznqg-unsplash.jpg"
-          alt="Photo of the author of this website"
-        />
-
-        <p>
-          Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores rem
-          quas autem praesentium consectetur molestias. Commodi, esse! Corporis
-          id vero ab! Aliquam animi ipsam doloremque illum dignissimos
-          recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Deserunt, officia?
-        </p>
-        <audio>Play</audio>
-      </div>
-      <div class="contributor--second">
-        <img
-          src="./rafaella-mendes-diniz-et_78QkMMQs-unsplash.jpg"
-          alt="Photo of the collaborator for this website"
-        />
-        <p>
-          Lorem ipsum dolor,et consectetur adipisicing elit. Ipsam est dolores
-          Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores rem
-          quas autem praesentium consectetur molestias. Commodi, esse! Corporis
-          id vero ab! Aliquam animi ipsam doloremque illum dignissimos
-          recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Deserunt, officia?
-        </p>
-      </div>
-    </div>
-
-    <div class="clients">
-      <div class="client--one">
-        <img
-          src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
-          alt="Photo of one of a client of the website"
-          height="120px"
-          width="120px"
-        />
-        <div class="test">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dignissimos recusandae tempore, ducimus debitis, placeat animi, cum
-            corrupti sequi saepe amet similique officae minus aliquid officia
-            cum harum vel tempore.
-          </p>
-        </div>
-        <audio
-          src="./audio/prj_108373_b4afed2f83f686a07aa94e3c467b3936_1672173592.mp3"
-        >
-          Play
-        </audio>
-      </div>
-      <div class="client--two">
-        <img
-          height="120px"
-          width="120px"
-          src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
-          alt="Photo of one of a client of the website"
-        />
-        <div class="test">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dignissimos recusandae tempore, ducimus debitis, placeat animi, cum
-            corrupti sequi saepe amet similique officae minus aliquid officia
-            cum harum vel tempore.
-          </p>
-        </div>
-        <audio
-          src="./audio/prj_108373_b4afed2f83f686a07aa94e3c467b3936_1672173592.mp3"
-        >
-          Play
-        </audio>
-      </div>
-      <div class="client--three">
-        <img
-          height="120px"
-          width="120px"
-          src="./images/aiony-haust-3TLl_97HNJo-unsplash.jpg"
-          alt="Photo of one of a client of the website"
-        />
-        <div class="test">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            dignissimos recusandae tempore, ducimus debitis, placeat animi, cum
-            corrupti sequi saepe amet similique officae minus aliquid officia
-            cum harum vel tempore.
-          </p>
-        </div>
-        <audio
-          src="./audio/prj_108373_b4afed2f83f686a07aa94e3c467b3936_1672173592.mp3"
-        >
-          Play
-        </audio>
-      </div>
-    </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <footer>
-      <div class="footer">
-        <ul class="footer--list">
-          <li><a href="./mislaneous.html"> FAQ</a></li>
-          <li><a href="./mislaneous.html">Help center</a></li>
-          <li><a href="./mislaneous.html">Privacy</a></li>
-          <li><a href="./mislaneous.html">Account</a></li>
+    <nav class="navbar bg-body-tertiary bg-primary">
+      <div class="container-fluid">
+        <ul class="list-style-none text-decoration-none">
+          <li>
+            <a class="link-dark text-decoration-none" href="./mislaneous.html">
+              FAQ</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none link-dark" href="./mislaneous.html"
+              >Help center</a
+            >
+          </li>
+          <li>
+            <a class="link-dark text-decoration-none" href="./mislaneous.html"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a class="link-dark text-decoration-none" href="./mislaneous.html"
+              >Account</a
+            >
+          </li>
         </ul>
-        <div class="footer--media">
-          <h2>Follow Us</h2>
-          <a href="./ContactUs.html">Contact Us</a>
-        </div>
+        <h2>Follow Us</h2>
+        <a href="./ContactUs.html">Contact Us</a>
       </div>
-    </footer>
-    <script src="./aboutUs.js"></script>
+    </nav>
+    <script
+      src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+      async
+      defer
+    ></script>
   </body>
 </html>

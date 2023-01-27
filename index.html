@@ -5,41 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="This is the Home page" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./movies.css">
+    <title>Home Page</title>    
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="nav-branding">Logo</a>
-          <ul class="nav--menu">
-            <li class="nav--item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav--item">
-              <a href="./signin.html" class="nav-link">Sign up</a>
-            </li>
-            <li class="nav--item">
-              <a href="./Blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav--item">
-              <a href="./Movies.html" class="nav-link">Movies</a>
-            </li>
-            <li class="nav--item">
-              <a href="./AboutUs.html" class="nav-link">About</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>LOGO</h2></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active bg-light" href="./index.html">Home</a>
+              <a class="nav-link bg-light" href="./signin.html">Sign Up</a>
+              <a class="nav-link bg-light" href="./Blog.html">Blog</a>
+              <a class="nav-link bg-light" href="./Movies.html">Movies</a>
+              <a class="nav-link bg-light" href="./AboutUs.html">About</a>
+            </div>
           </div>
-        </nav>
-      </div>
-    </header>
-    <div class="hero">
+        </div>
+      </nav>
+    </header>    
+    <div class="container">
       <div class="hero--text">
         <h1>Non stop movies</h1>
         <p>
@@ -63,88 +63,106 @@
           name="email"
         />
 
-        <button>Join Us</button>
+        <a href="#" class="btn btn-warning">JOIN US</a>   
       </div>
     </div>
-    <div class="description">
-      <div class="description--1">
-        <div class="description--img">
-          <img src="./images/ma girl running.jpg" alt="movie poster" />
+    </div>
+    <div class="container">
+      <div class="row justify-content-start align-items-center">
+        <div class="col">
+          <img src="./images/ma girl running.jpg" alt="movie poster" height="300rem" width="300rem" />
         </div>
-        <div class="description--p">
+        <div class="col">
           <p>RUNNIG AWAY FROM YOUR FEARS ?!</p>
         </div>
       </div>
-      <div class="description--2">
-        <div class="description--img">
-          <img
-            src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-            alt="movie poster 2"
-          />
+      <div class="row justify-content-start align-items-center">
+        <div class="col">
+          <p>RUNNIG AWAY FROM YOUR FEARS ?!</p>
         </div>
-        <div class="description--p">
-          <p>FIND PEACE!</p>
+        <div class="col">
+          <img src="./images/ma girl running.jpg" alt="movie poster" height="300rem" width="300rem" />
+        </div> 
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <video controls >
+              <source
+                type="video/mp4"
+                src="./videos/Elementor video placeholder.mp4"
+              />
+              <track src="" label="English" kind="captions" srclang="en-us" default />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">MOVIE</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+                              
+      <div class="row">
+        <div class="col ">
+          <div class="card" style="width: 18rem;">
+            <video controls>
+              <source
+                type="video/mp4"
+                src="./videos/Elementor video placeholder.mp4"
+              />
+              <track src="" label="English" kind="captions" srclang="en-us" default />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">MOVIE</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col ">
+          <div class="card" style="width: 18rem;">
+            <video controls >
+              <source
+                type="video/mp4"
+                src="./videos/Elementor video placeholder.mp4"
+              />
+              <track src="" label="English" kind="captions" srclang="en-us" default />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">MOVIE</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>    
-    <div class="nowstreaming">      
-      <h1>Now Streaming</h1>    
-      <div class="nowstreaming--each">
-        <div class="nowstreaming--each__video">
-          <video controls>
-            <source
-              type="video/mp4"
-              src="./videos/Elementor video placeholder.mp4"
-            />
-            <track
-              src=""
-              label="English"
-              kind="captions"
-              srclang="en-us"
-              default
-            />
-          </video>
+      
+      <div class="row">
+        <div class="col ">
+          <div class="card" style="width: 18rem;">
+            <video controls>
+              <source
+                type="video/mp4"
+                src="./videos/Elementor video placeholder.mp4"
+              />
+              <track src="" label="English" kind="captions" srclang="en-us" default />
+            </video>
+            <div class="card-body">
+              <h5 class="card-title">MOVIE</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+          </div>
         </div>
-        <button class="button" style="vertical-align:middle"><span>WATCH</span></button>      
       </div>
-      <div class="nowstreaming--each">
-        <div class="nowstreaming--each__video">
-          <video controls>
-            <source
-              type="video/mp4"
-              src="./videos/Elementor video placeholder.mp4"
-            />
-            <track
-              src=""
-              label="English"
-              kind="captions"
-              srclang="en-us"
-              default
-            />
-          </video>
-        </div>
-        <button class="button" style="vertical-align:middle"><span>WATCH</span></button>      
-      </div>
-      <div class="nowstreaming--each">
-        <div class="nowstreaming--each__video">
-          <video controls>
-            <source
-              type="video/mp4"
-              src="./videos/Elementor video placeholder.mp4"
-            />
-            <track
-              src=""
-              label="English"
-              kind="captions"
-              srclang="en-us"
-              default
-            />
-          </video>
-        </div>
-        <button class="button" style="vertical-align:middle"><span>WATCH</span></button>      
-      </div>
-    </div>      
-    <div class="bottomSignIn">
+    </div>            
+    
+    <div class="container border border-warning text-center">
       <div class="bottomSignIn--content">
       <h3>Sign in to access your unlimited movie package</h3>
       <label for="email1">Email Address: </label>
@@ -154,25 +172,43 @@
         id="email1"
         name="email"
       />
-      <button class="button" style="vertical-align:middle"><span>JOIN US</span></button>      
+      <a href="#" class="btn btn-warning">JOIN US</a>   
     </div>
     </div>
   </div>
-  <footer>
-    <div class="footer">
-      <ul class="footer--list">
-        <li><a href="./mislaneous.html"> FAQ</a></li>
-        <li><a href="./mislaneous.html">Help center</a></li>
-        <li><a href="./mislaneous.html">Privacy</a></li>
-        <li><a href="./mislaneous.html">Account</a></li>
+  <nav class="navbar bg-body-tertiary bg-primary">
+    <div class="container-fluid">
+      <ul class="list-style-none text-decoration-none">
+        <li>
+          <a class="link-dark text-decoration-none" href="./mislaneous.html">
+            FAQ</a
+          >
+        </li>
+        <li>
+          <a class="text-decoration-none link-dark" href="./mislaneous.html"
+            >Help center</a
+          >
+        </li>
+        <li>
+          <a class="link-dark text-decoration-none" href="./mislaneous.html"
+            >Privacy</a
+          >
+        </li>
+        <li>
+          <a class="link-dark text-decoration-none" href="./mislaneous.html"
+            >Account</a
+          >
+        </li>
       </ul>
-      <div class="footer--media">
-        <h2>Follow Us</h2>
-        <a href="./ContactUs.html">Contact Us</a>
-      </div>
+      <h2>Follow Us</h2>
+      <a href="./ContactUs.html">Contact Us</a>
     </div>
-  </footer>
-    <script src="./index.js"></script>
+  </nav>
+  <script
+    src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+    async
+    defer
+  ></script>
     
   </body>
 </html>

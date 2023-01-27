@@ -6,41 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Description" content="This is the Movies page" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./movies.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="navbar">
-          <a href="#" class="nav-branding">Logo</a>
-          <ul class="nav--menu">
-            <li class="nav--item">
-              <a href="./index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav--item">
-              <a href="./signin.html" class="nav-link">Sign up</a>
-            </li>
-            <li class="nav--item">
-              <a href="./Blog.html" class="nav-link">Blog</a>
-            </li>
-            <li class="nav--item">
-              <a href="./Movies.html" class="nav-link">Movies</a>
-            </li>
-            <li class="nav--item">
-              <a href="./AboutUs.html" class="nav-link">About</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>LOGO</h2></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active bg-light" href="./index.html">Home</a>
+              <a class="nav-link bg-light" href="./signin.html">Sign Up</a>
+              <a class="nav-link bg-light" href="./Blog.html">Blog</a>
+              <a class="nav-link bg-light" href="./Movies.html">Movies</a>
+              <a class="nav-link bg-light" href="./AboutUs.html">About</a>
+            </div>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
-    <div class="topclass">
-      <aside class="topclass--side">
+    <div class="row">
+      <div class="col">
         <table>
           <tr>
             <thead>
@@ -63,144 +66,224 @@
             </ol>
           </tr>
         </table>
-      </aside>
-      <div class="hot">
-        <div class="hot--each">
-          <div class="hot__img">
-            <img
-              src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-              alt="Current Hot Movie"
-            />
+      </div>
+      <div class="col-9">
+        <div class="container text-center bg-secondary">
+          <div class="row row-cols-3">
+            <div class="col mt-3">
+              <img
+                src="./images/blake-wisz-w3Zc6MHmpmY-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/er-sever-6s2Eep4ddJw-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/ma girl running.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/people riding bike.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/shubham-dhage-4Wk31QvI2PA-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/blake-wisz-w3Zc6MHmpmY-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary mb-2">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/blake-wisz-w3Zc6MHmpmY-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/blake-wisz-w3Zc6MHmpmY-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
+            <div class="col mt-3">
+              <img
+                src="./images/blake-wisz-w3Zc6MHmpmY-unsplash.jpg"
+                alt=""
+                width="150rem"
+                height="150rem"
+              />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure
+                obcaecati repudiandae illo eaque! Nisi nihil expedita.
+              </p>
+              <a href="#" class="btn btn-primary">WATCH</a>
+            </div>
           </div>
-          <button class="button" style="vertical-align: middle">
-            <span>WATCH</span>
-          </button>
-        </div>
-        <div class="hot--each">
-          <div class="hot__img">
-            <img
-              src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-              alt="Current Hot Movie"
-            />
-          </div>
-          <button class="button" style="vertical-align: middle">
-            <span>WATCH</span>
-          </button>
-        </div>
-        <div class="hot--each">
-          <div class="hot__img">
-            <img
-              src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-              alt="Current Hot Movie"
-            />
-          </div>
-          <button class="button" style="vertical-align: middle">
-            <span>WATCH</span>
-          </button>
-        </div>
-        <div class="hot--each">
-          <div class="hot__img">
-            <img
-              src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-              alt="Current Hot Movie"
-            />
-          </div>
-          <button class="button" style="vertical-align: middle">
-            <span>WATCH</span>
-          </button>
-        </div>
-        <div class="hot--each">
-          <div class="hot__img">
-            <img
-              src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-              alt="Current Hot Movie"
-            />
-          </div>
-          <button class="button" style="vertical-align: middle">
-            <span>WATCH</span>
-          </button>
-        </div>
-        <div class="hot--each">
-          <div class="hot__img">
-            <img
-              src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-              alt="Current Hot Movie"
-            />
-          </div>
-          <button class="button" style="vertical-align: middle">
-            <span>WATCH</span>
-          </button>
         </div>
       </div>
+
+      <h3>Best of this Month</h3>
+      <div class="container border border-success mb-5">
+        <div class="row border align-items-center">
+          <div class="col bg-warning">
+            <img
+              class="img-thumbnail rounded"
+              src="./images/nong-v-5EOAoPiq56U-unsplash.jpg"
+              alt="Photo of the author of this website"
+              height="250em"
+              width="250em"
+            />
+          </div>
+          <div class="col">
+            <p>
+              Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores
+              rem quas autem praesentium consectetur molestias. Commodi, esse!
+              Corporis id vero ab! Aliquam animi ipsam doloremque illum
+              dignissimos recusandae? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deserunt, officia?
+            </p>
+          </div>
+        </div>
+        <div class="row border align-items-center">
+          <div class="col">
+            <p>
+              Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores
+              rem quas autem praesentium consectetur molestias. Commodi, esse!
+              Corporis id vero ab! Aliquam animi ipsam doloremque illum
+              dignissimos recusandae? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deserunt, officia?
+            </p>
+          </div>
+          <div class="col bg-warning">
+            <img
+              class="img-thumbnail rounded"
+              src="./samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg"
+              alt="Photo of the author of this website"
+              height="250em"
+              width="250em"
+            />
+          </div>
+        </div>
+        <div class="row border align-items-center">
+          <div class="col bg-warning">
+            <img
+              class="img-thumbnail rounded"
+              src="./images/nong-v-5EOAoPiq56U-unsplash.jpg"
+              alt="Photo of the author of this website"
+              height="250em"
+              width="250em"
+            />
+          </div>
+          <div class="col">
+            <p>
+              Lorem ipsum dolor, sit amur adipisicing elit. Ipsam est dolores
+              rem quas autem praesentium consectetur molestias. Commodi, esse!
+              Corporis id vero ab! Aliquam animi ipsam doloremque illum
+              dignissimos recusandae? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deserunt, officia?
+            </p>
+          </div>
+          
+      </div>
+      
     </div>
-    <h3>Best of this Month</h3>
-    <div class="month">
-      <div class="month--each">
-        <div class="month__img">
-          <img
-            src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-            alt="The Best movie of this Month as of Billboard"
-          />
-        </div>
-        <div class="month__p">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            cupiditate eveniet molestias facilis suscipit dolor magni
-            temporibus, excepturi architecto odio accusamus, laboriosam
-            exercitationem totam. Voluptatum doloribus eos voluptatem
-            repellendus ipsa.
-          </p>
-        </div>
-      </div>
-      <div class="month--each">
-        <div class="month__img">
-          <img
-            src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-            alt="The Best movie of this Month as of Billboard"
-          />
-        </div>
-        <div class="month__p">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            cupiditate eveniet molestias facilis suscipit dolor magni
-            temporibus, excepturi architecto odio accusamus, laboriosam
-            exercitationem totam. Voluptatum doloribus eos voluptatem
-            repellendus ipsa.
-          </p>
-        </div>
-      </div>
-      <div class="month--each">
-        <div class="month__img">
-          <img
-            src="./images/roman-malik-U8Vycj3pTjw-unsplash(2).jpg"
-            alt="The Best movie of this Month as of Billboard"
-          />
-        </div>
-        <div class="month__p">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            cupiditate eveniet molestias facilis suscipit dolor magni
-            temporibus, excepturi architecto odio accusamus, laboriosam
-            exercitationem totam. Voluptatum doloribus eos voluptatem
-            repellendus ipsa.
-          </p>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="footer">
-        <ul class="footer--list">
-          <li><a href="./mislaneous.html"> FAQ</a></li>
-          <li><a href="./mislaneous.html">Help center</a></li>
-          <li><a href="./mislaneous.html">Privacy</a></li>
-          <li><a href="./mislaneous.html">Account</a></li>
+    <nav class="navbar bg-body-tertiary bg-primary">
+      <div class="container-fluid">
+        <ul class="list-style-none text-decoration-none">
+          <li>
+            <a class="link-dark text-decoration-none" href="./mislaneous.html">
+              FAQ</a
+            >
+          </li>
+          <li>
+            <a class="text-decoration-none link-dark" href="./mislaneous.html"
+              >Help center</a
+            >
+          </li>
+          <li>
+            <a class="link-dark text-decoration-none" href="./mislaneous.html"
+              >Privacy</a
+            >
+          </li>
+          <li>
+            <a class="link-dark text-decoration-none" href="./mislaneous.html"
+              >Account</a
+            >
+          </li>
         </ul>
-        <div class="footer--media">
-          <h2>Follow Us</h2>
-          <a href="./ContactUs.html">Contact Us</a>
-        </div>
+        <h2>Follow Us</h2>
+        <a href="./ContactUs.html">Contact Us</a>
       </div>
-    </footer>
-    <script src="./index.js"></script>
+    </nav>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
